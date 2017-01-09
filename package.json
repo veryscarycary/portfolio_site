@@ -1,36 +1,39 @@
 {
-  "name": "creative",
-  "title": "Creative",
+  "name": "portfoliosite",
+  "title": "Portfolio Site",
   "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/creative",
-  "author": "Start Bootstrap",
+  "homepage": "http://carymeskell.com",
+  "author": "Cary Meskell",
   "license": {
     "type": "MIT",
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
-  "devDependencies": {
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "body-parser": "^1.15.2",
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
+    "express": "^4.14.0",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.10",
     "gulp-header": "^1.8.7",
     "gulp-less": "^3.1.0",
+    "gulp-nodemon": "^2.2.1",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
     "jquery": "^1.11.3",
     "magnific-popup": "^1.1.0",
+    "nodemon": "^1.11.0",
     "scrollreveal": "^3.1.4"
+  },
+  "devDependencies": {
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+    "url": "https://github.com/veryscarycary/"
   },
-  "dependencies": {
-    "animate.css": "^3.5.2",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "gulp-nodemon": "^2.2.1",
-    "nodemon": "^1.11.0"
+  "scripts": {
+    "start": "node server/index.js"
   }
 }
