@@ -21,6 +21,6 @@ app.listen(port, function(err) {
 
 
 // to keep heroku deployment awake
-setInterval(function() {
-  http.get('http://carymeskell.com');
-}, 1200000); // every 20 minutes (1200000)
+// setInterval(function() {
+//   http.get('http://carymeskell.com');
+// }, 1200000); // every 20 minutes (1200000)
