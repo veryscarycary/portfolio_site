@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,6 +31,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/creative.css" />
     <link rel="stylesheet" type="text/css" href="css/modals.css" />
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -74,13 +74,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Why Me?</a>
+                        <a class="page-scroll" href="#why">Why Me?</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Recent Work</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#clients"></a>
+                        <a class="page-scroll" href="#portfolio">Personal Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -96,7 +93,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <img src="./img/profile.png" class="img-circle profile-image" />
+                <img src="./img/profile.png" class="img-circle profile-image mb32" />
                 <h1>Hi, I’m Cary.</h1>
                 <hr />
                 <p>I am a full stack engineer with advanced knowledge of web application development in JavaScript and a
@@ -116,19 +113,19 @@
                     <p class="text-faded">I’m motivated by product design and real-world impact. I can (and have) spent
                         hours ensuring my applications are pixel-perfect, and I especially enjoy turning ideas into
                         reality. I thrive on challenges and deadlines, am fanatical about the tiny details, and believe
-                        that thorough planning can save hours of programming. <br /><br />
-                        In my most recent application, Athena, I extended the React Router to create a role-based
-                        authorization system, as well as D3.js to better present the visual metric data in the
-                        dashboard. To ensure a seamless user experience, I architected the front-end to minimize
-                        expensive queries to the database and loaded the information in state using React Redux.
+                        that thorough planning can save hours of programming.
                         <br /><br />
-                        I particularly enjoy creating solutions to problems that I personally have. For example, I built
-                        a restaurant wish list application, because I have always struggled with the question “what
-                        should I eat for dinner?” I’ve also designed an interactive web game using the Phaser.js
-                        graphics engine, as well as a robust event manager with React Native. <br /><br />
-                        I’m experienced with front-end frameworks such as React, React Native, Redux, and Angular, and
-                        comfortable with NodeJS, Mongo, and various SQL platforms. Lately, I’ve been nerding out over
-                        SASS, because I find beauty in how it adds structure to the frequent chaos of CSS.
+                        I particularly enjoy developing solutions for problems I encounter personally. For instance, I
+                        created the Relister desktop application to post and relist personal ads across multiple
+                        services
+                        simultaneously, addressing the duplication of efforts I experienced firsthand. Similarly, after
+                        struggling
+                        to track my dietary fitness goals, I developed MacroMaker, a mobile app dedicated to monitoring
+                        macronutrients. <br /><br />
+                        I have extensive experience with front-end frameworks like React, React Native, Redux, and
+                        Angular, as well as back-end technologies such as Node.js, MongoDB, and various SQL platforms.
+                        Recently, I’ve been diving into Docker, appreciating how it brings structure to the often
+                        chaotic process of deployment.
                     </p>
                     <a href="./resume/Resume2022.pdf" class="btn btn-default btn-xl" target="_blank">Check Out My
                         Resume</a>
@@ -138,7 +135,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section id="services">
+    <section id="why">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -207,7 +204,7 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    React, Redux, SASS, MongoDB, Postgres, ElasticSearch
+                                    React, Redux, SASS, MongoDB, Postgres, ElasticSearch, Docker
                                 </div>
                                 <div class="project-name">
                                     Athena Smart Support Platform
@@ -219,14 +216,14 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal2" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/FlashModal.jpg" class="img-responsive" alt="" />
+                        <img src="img/portfolio/TextAdventureModal.jpg" class="img-responsive" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    React Native, MySQL, Express, Node.js
+                                    Ruby, Rack, Docker, Websockets
                                 </div>
                                 <div class="project-name">
-                                    Flash!
+                                    Text Adventure
                                 </div>
                             </div>
                         </div>
@@ -251,6 +248,54 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal4" class="portfolio-box portfolio-link" data-toggle="modal">
+                        <img src="img/portfolio/RelisterModal.jpg" class="img-responsive" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Electron, Selenium, React
+                                </div>
+                                <div class="project-name">
+                                    Relister
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal5" class="portfolio-box portfolio-link" data-toggle="modal">
+                        <img src="img/portfolio/MacroMakerModal.jpg" class="img-responsive" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    React Native
+                                </div>
+                                <div class="project-name">
+                                    MacroMaker
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal6" class="portfolio-box portfolio-link" data-toggle="modal">
+                        <img src="img/portfolio/FlashModal.jpg" class="img-responsive" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    React Native, MySQL, Express, Node.js
+                                </div>
+                                <div class="project-name">
+                                    Flash!
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal7" class="portfolio-box portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/ToGoModal.jpg" class="img-responsive" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -266,7 +311,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal5" class="portfolio-box portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal8" class="portfolio-box portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/SolarModal.jpg" class="img-responsive" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -282,7 +327,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal6" class="portfolio-box portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal9" class="portfolio-box portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/AnalyzerModal.jpg" class="img-responsive" alt="" />
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -319,7 +364,7 @@
 
     <!-- Form section -->
     <section id="contact">
-        <h2 id="form-title" style="text-align: center;">Let&#39;s Talk</h2>
+        <h2 id="form-title" style="text-align: center;">Let&#39;s Chat</h2>
         <form method="POST" action="https://formspree.io/f/mgedpjjv">
             <fieldset class="contact-info-group">
                 <label><span>Your Name</span>
@@ -329,7 +374,7 @@
                     <input type="email" name="email" />
                 </label>
             </fieldset>
-            <label><span>What's Up</span>
+            <label><span>Your Message</span>
                 <textarea name="message"></textarea>
             </label>
             <fieldset class="submit-wrap">
@@ -355,31 +400,37 @@
                             <h2></h2>
                             <hr class="star-primary" />
                             <img src="img/portfolio/AthenaModal.jpg" class="img-responsive img-centered" alt="" />
-                            <p>In this application, I used React/Redux, SASS, MongoDB, and PosgreSQL to develop a
-                                knowledge-base SaaS application that focuses on product analytics and customer support.
-                                By modifying the React-Router and Redux, I constructed a role-based authentication and
-                                authorization system that provided different content to the user depending on their
-                                privilege levels. Using the D3.js library, I was able to produce data visualizations and
-                                metrics to better inform decision makers of their products.</p>
-                            <!-- <br/><br/>
-                    Check it out <a href="http://54.183.175.176:3000/" target="_blank">here</a> using the following demo accounts:</p>
-                    <div style="display: flex; justify-content: center;">
-                      <div style="text-align: left">
-                        <p>Username: <strong>admin</strong><br />
-                        Password: <strong>c</strong></p>
-                        <br />
-                        <p>Username: <strong>user</strong><br />
-                        Password: <strong>c</strong></p>
-                      </div>
-                    </div> -->
+                            <p>
+                                In this application, I used React/Redux, SASS, MongoDB, and PostgreSQL to develop a
+                                knowledge-base SaaS application focused on product analytics and customer support,
+                                utilizing a microservice-based architecture orchestrated by Docker.
+
+                                I enabled React Router to handle role-based authorization with Redux, displaying
+                                different content based on user privilege levels. Additionally, I utilized the D3.js
+                                library to create data visualizations and metrics, helping decision-makers gain insights
+                                into their products.</p>
+                            <br /><br />
+                            Check it out <a href="https://athenasmartsupport.duckdns.org" target="_blank">here</a> using
+                            the
+                            following demo accounts:
+                            </p>
+                            <div style="display: flex; justify-content: center;">
+                                <div style="text-align: left">
+                                    <p>Username: <strong>admin</strong><br />
+                                        Password: <strong>c</strong></p>
+                                    <br />
+                                    <p>Username: <strong>user</strong><br />
+                                        Password: <strong>c</strong></p>
+                                    <br />
+                                    <p>Username: <strong>user</strong><br />
+                                        Password: <strong>c</strong></p>
+                                </div>
+                            </div>
 
                             <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong class="color-red">2016-10-15
-                                    </strong>
-                                </li>
                                 <li>Category:
-                                    <strong class="color-red">React, Redux, SASS, MongoDB, Postgres, ElasticSearch
+                                    <strong class="color-red">React, Redux, SASS, MongoDB, Postgres, ElasticSearch,
+                                        Docker
                                     </strong>
                                 </li>
                             </ul>
@@ -393,6 +444,179 @@
     </div>
 
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Text Adventure</h2>
+                            <hr class="star-primary" />
+                            <img src="img/portfolio/TextAdventureModal.jpg" class="img-responsive img-centered"
+                                alt="" />
+                            <p>Text Adventure is a Ruby-based game where players wake up in a strange place, exploring
+                                and interacting with their environment in order to progress. I originally created this
+                                as a standalone Ruby
+                                program and later ported to the browser using Docker, Rack and websockets, enabling
+                                online
+                                gameplay. The game's modular code allows for easy expansion with new storylines, and its
+                                core classes—like Game, Player, Map, and Item—create a flexible framework for rich,
+                                text-based adventure.</p><br />
+                            <p>Play it <a href="https://textadventure.duckdns.org" target="_blank">here</a></p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong class="color-red">2016-09-16
+                                    </strong>
+                                </li>
+                                <li>Category:
+                                    <strong class="color-red">Ruby, Rack, Docker, Websockets
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>AngularJS, Phaser.js, Socket.io, MongoDB, Express, Node.js</h2>
+                            <hr class="star-primary" />
+                            <img src="img/portfolio/FrenemiesModal.jpg" class="img-responsive img-centered" alt="" />
+                            <p>In this project, I developed a browser-based, multiplayer online game with real-time
+                                capabilities using
+                                WebSocket connections between the client and server. I ensured that client data was
+                                properly handled and processed by the server, creating a seamless two-way communication
+                                channel. The game features a lobby system that allows multiple users to queue for
+                                in-progress games,
+                                supporting dynamic player management and enhancing the multiplayer experience with
+                                immersive graphics and audio elements.</p>
+                            <!-- <p>Play it <a href="http://107.170.245.62:3000/" target="_blank">here</a></p> -->
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong class="color-red">2016-07-30
+                                    </strong>
+                                </li>
+                                <li>Category:
+                                    <strong class="color-red">AngularJS, MongoDB, Phaser.js, Express, Node.js
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Relister</h2>
+                            <hr class="star-primary" />
+                            <img src="img/portfolio/RelisterModal.jpg" class="img-responsive img-centered" alt="" />
+                            <p>Relister is a tool I built to simplify the process of relisting posts on secondhand
+                                selling platforms (currently supporting Craigslist and Facebook Marketplace). It
+                                features options for creating posts simultaneously across platforms and includes a price
+                                drop function, allowing users to relist ads with automatic price adjustments. In
+                                addition to its easy-to-use desktop interface, Relister includes a CLI for hands-off
+                                automation, supporting regular scheduling with cron jobs.</p>
+                            <br /><br />
+                            Check out a quick <a href="https://youtu.be/ZcHVlrugJ0g" target="_blank">demo</a></p>
+
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong class="color-red">2016-10-15
+                                    </strong>
+                                </li>
+                                <li>Category:
+                                    <strong class="color-red">Electron, Typescript, Selenium, React
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>MacroMaker</h2>
+                            <hr class="star-primary" />
+                            <img src="img/portfolio/MacroMakerModal.jpg" class="img-responsive img-centered" alt="" />
+                            <p>MacroMaker is a mobile app I developed to simplify diet tracking by focusing on macro
+                                ratios and calorie management to help users achieve their fitness goals. Designed as an
+                                MVP, it offers core features like live tracking of daily intake, historical data, and
+                                average weekly insights, with alerts for calorie and macro targets. With an emphasis on
+                                minimal third-party services, MacroMaker delivers essential functionality directly on
+                                the device, providing a simple and efficient user experience for diet management.</p>
+                            <!-- <p>Play it <a href="http://107.170.245.62:3000/" target="_blank">here</a></p> -->
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong class="color-red">2016-07-30
+                                    </strong>
+                                </li>
+                                <li>Category:
+                                    <strong class="color-red">React Native
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -431,48 +655,7 @@
         </div>
     </div>
 
-
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>AngularJS, Phaser.js, Socket.io, MongoDB, Express, Node.js</h2>
-                            <hr class="star-primary" />
-                            <img src="img/portfolio/FrenemiesModal.jpg" class="img-responsive img-centered" alt="" />
-                            <p>For this application, I used web sockets and the Phaser.js framework to build a
-                                multiplayer, online game in the browser. While I did create my own custom stage in the
-                                front-end, my primary responsibility was establishing the web socket connections and
-                                ensuring the client data was properly handled by the server. With each successive
-                                pass-through, the game difficulty increases!</p>
-                            <!-- <p>Play it <a href="http://107.170.245.62:3000/" target="_blank">here</a></p> -->
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong class="color-red">2016-07-30
-                                    </strong>
-                                </li>
-                                <li>Category:
-                                    <strong class="color-red">AngularJS, MongoDB, Phaser.js, Express, Node.js
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
-                                    class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -509,7 +692,7 @@
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -551,7 +734,7 @@
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
